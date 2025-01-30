@@ -1,0 +1,53 @@
+// Renkler ve stil için bazı değişkenler
+$primary-color: #1A73E8;
+$background-color: transparent;
+$text-color: #333333;
+$secondary-text-color: #666666;
+$shadow-color: rgba(196, 102, 102, 0.1);
+
+// Analytics sayfasının ana konteyneri
+.analytics-container {
+  background-color: $background-color;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px $shadow-color;
+  margin-top: 30px;
+
+  // Daha küçük ekranlar için responsive ayar
+  @media (max-width: 768px) {
+    padding: 16px;
+    margin-top: 20px;
+  }
+}
+
+// Grafik konteyneri
+.chart-container {
+  width: 100%; // Genişlik %100, ekran boyutuna göre esneyecek
+  max-width: 800px; // Grafik genişliğini sınırladık
+  height: 300px; // Grafik boyutu burada uygun hale getirilmiş
+  margin: 0 auto;  // Ortalamak için
+  padding: 0 10px;  // Grafik etrafında biraz boşluk bırakmak için
+}
+
+// Başlık stili
+h2 {
+  color: $text-color;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+
+  // Mobil uyumlu başlık
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
+}
+
+// Grafik açıklaması (metin)
+p {
+  font-size: 1.125rem;
+  color: $secondary-text-color;
+
+  // Mobilde daha küçük açıklamalar
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
